@@ -41,7 +41,7 @@ def print_html(data):
     time = str(now.hour) + ":" + str(now.minute) + ":" + str(now.second)
     counttxt = "まわったブースは下の" + str(len(visited_booth)) + "箇所です"
     for symbol in visited_booth:
-        booths += ("<p>" + str(symbol) + "</p>")
+        booths += ("<p>" + "ブース：" + str(symbol) + "</p>")
 
     temp = Template(html)           #htmlに代入
     d = {

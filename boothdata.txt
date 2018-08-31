@@ -1,8 +1,8 @@
-foo
-bar
-robop
-FINALFANT
-hoge
-nfc
-ASY
-dareka
+a
+b
+c
+d
+e
+f
+g
+h

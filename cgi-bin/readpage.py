@@ -10,6 +10,15 @@ import datetime
 import re
 from string import Template
 
+
+def on_startup(targets):
+    print ("started!")
+    return targets
+
+def on_connect(tag):
+    if tag.ndef:
+        print tag.ndef.message.pretty()
+
 clf = nfc.ContactlessFrontend('usb')
 
 def print_html(data):
@@ -56,3 +65,5 @@ def connected(tag):
 
 
 clf.connect(rdwr={'on-connect': connected})
+
+clf.close()

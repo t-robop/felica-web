@@ -25,7 +25,7 @@ clf = nfc.ContactlessFrontend('usb')
 def print_html(data):
     now = datetime.datetime.now()  # 時刻取得
     visited_booth = []  # 訪れたブースの記号リスト
-    booths = ""
+    booths = ""         # htmlタグをつけたvisited__booth要素
 
     f = open("index.html")  # 表示する雛形html
     html = f.read()
@@ -53,8 +53,6 @@ def print_html(data):
 
     print "Content-type: text/html\n"
     print temp.substitute(d)
-    # print(visited_booth)
-
 
 def connected(tag):
     if tag.ndef:

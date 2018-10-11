@@ -12,23 +12,28 @@
             font-size: 2rem;
         }
     </style>
-    <script content="tex/javascript">
+    <!--<script content="tex/javascript">
         setTimeout("location.reload()", 1000);
-    </script>
+    </script>-->
 </head>
 
 <body>
     <div class="container">
         <div class="py-5 text-center">
             <h1>NFC Reader</h1>
+            <p>$time</p>
         </div>
-        <li class="list-group-item"><b>まわったブース</b></li>
-        $visited
+
         <li class="list-group-item d-flex justify-content-between align-items-center">
             合計
             <span class="badge badge-secondary badge-pill">$count</span>
         </li>
-        </ul>
+        <p></p>
+        <li class="list-group-item">
+            <b>まわったブース</b>
+            $visited
+        </li>
+    </div>
 </body>
 
 </html>

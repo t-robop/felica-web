@@ -42,7 +42,7 @@ def print_html(data):
     time = str(now.hour) + ":" + str(now.minute) + ":" + str(now.second)
     counttxt = str(len(visited_booth))
     for symbol in visited_booth:
-        booths += ("<li class='list-group-item'>" + str(symbol) + "</li>")
+        booths += ("<p>" + str(symbol) + "</p>")
 
     temp = Template(html)  # htmlに代入
     d = {

@@ -1,12 +1,40 @@
 # felica-web
+
+## Description
 Webサーバーを建ててブラウザでNFCを読むやつ
 
-# 使いかた
-- パソリを接続する
-    - vmだと切れやすいので注意
-- server.pyを実行
-- Chromeから http://localhost:8000/cgi-bin/readpage.py にアクセス
-- 読み込み中にNFCタグをかざす
-- 結果とともにページが表示される
-- もう１回読むときはリロード
-    - index.html を編集して自動リロードできます
+## Requirement
+### Python version
+v3.7.x
+
+### Operating System
+- Mac OS X
+- Linux
+
+## Setup
+### Mac
+``` bash
+git clone https://github.com/t-robop/felica-web
+sudo pip install -U nfcpy
+```
+``` bash
+cd felica-web
+python cgi-bin/readpage.py
+```
+
+### Linux
+``` bash
+git clone https://github.com/t-robop/felica-web
+sudo pip install -U nfcpy
+```
+``` bash
+cd felica-web
+sudo python cgi-bin/readpage.py
+```
+
+### How to use
+Access to http://localhost:8000/cgi-bin/readpage.py by browser🎉
+
+
+## License
+MIT

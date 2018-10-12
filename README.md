@@ -5,7 +5,7 @@ Webサーバーを建ててブラウザでNFCを読むやつ
 
 ## Requirement
 ### Python version
-v3.7.x
+v2.7.x
 
 ### Operating System
 - Mac OS X
